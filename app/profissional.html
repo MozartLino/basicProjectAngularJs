@@ -1,0 +1,18 @@
+<h1>Escolha {{model}}</h1>
+
+<form ng-submit="profissional()" ng-hide="profissional" >
+   <input type="text" placeholder="Profissional"/>
+</form>
+
+<form ng-submit="cidade()" ng-hide="city" >
+   <input type="text" placeholder="Cidade"/>
+</form>
+
+<div>
+<table>
+<tr ng-repeat="profissional in profissionais">
+<td>{{profissional.nome}}</td>
+<td>{{profissional.desc}}</td>
+</tr>
+</table>
+</div>
